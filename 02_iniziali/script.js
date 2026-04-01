@@ -4,10 +4,18 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 
 // Dichiara la funzione qui.
+function getInitials(array) {
+    const result = [];
 
+    for (let i = 0; i < array.length; i++) {
+        result.push(array[i][0]);
+    }
+
+    return result;
+}
 
 // Invoca la funzione qui e stampa il risultato in console
-
+console.log(getInitials(names));
 
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
